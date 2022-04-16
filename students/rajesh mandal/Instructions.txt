@@ -1,0 +1,6 @@
+git status
+it comes fatal error
+git JAVA-JDBC-BATCH/
+We can see unmodified file
+
+then we have to add the unmodified file into staging area to commit
