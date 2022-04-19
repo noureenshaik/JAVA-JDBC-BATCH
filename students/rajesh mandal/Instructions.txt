@@ -4,3 +4,10 @@ git JAVA-JDBC-BATCH/
 We can see unmodified file
 
 then we have to add the unmodified file into staging area to commit
+git add students 
+or 
+git add .    to add all  our unmodified file
+
+git status
+
+we can see files are ready to commit
