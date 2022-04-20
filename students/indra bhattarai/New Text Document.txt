@@ -1,1 +1,0 @@
-Hello, its the first week of Java Workshop and I am having fun.I am going to push this code into the repository.Hello Hello.
