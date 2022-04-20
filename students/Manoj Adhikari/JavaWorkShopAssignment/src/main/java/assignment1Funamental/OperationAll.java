@@ -1,3 +1,5 @@
+package assignment1Funamental;
+
 public class OperationAll {
     public static void main(String[] args) {
         System.out.println("a. Ans "+ (-5+(8*6)));

@@ -1,3 +1,5 @@
+package assignment1Funamental;
+
 public class FirstAssignmentPrint {
     /**
      * noureenshaik

@@ -1,3 +1,5 @@
+package assignment1Funamental;
+
 import java.util.Scanner;
 
 public class DivisionScanner {
