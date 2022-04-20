@@ -1,0 +1,48 @@
+1.	Who invented Java Programming?
+a) Guido van Rossum
+b) James Gosling
+c) Dennis Ritchie
+d) Bjarne Stroustrup
+Ans- b) James Gosling
+
+2.	Which statement is true about Java?
+a) Java is a sequence-dependent programming language
+b) Java is a code dependent programming language
+c) Java is a platform-dependent programming language
+d) Java is a platform-independent programming language
+Ans - d) Java is a platform-independent programming language
+
+3.	3. Which component is used to compile, debug and execute the java programs?
+a) JRE
+b) JIT
+c) JDK
+d) JVM
+Ans-c) JDK
+
+4.	Which one of the following is not a Java feature?
+a) Object-oriented
+b) Use of pointers
+c) Portable
+d) Dynamic and Extensible
+
+Ans- b) Use of pointers
+
+5.	Which of these cannot be used for a variable name in Java?
+a) identifier & keyword
+b) identifier
+c) keyword
+d) none of the mentioned
+Ans c) keyword
+
+6.	6. What is the extension of java code files?
+a) .js
+b) .txt
+c) .class
+d) .java
+Ans: d) .java
+7.	 Which environment variable is used to set the java path?
+a) MAVEN_Path
+b) JavaPATH
+c) JAVA
+d) JAVA_HOME
+Ans d) JAVA_HOME
