@@ -1,4 +1,4 @@
-package Assignment2FlowControl;
+package second_FlowControl;
 
 import java.util.Scanner;
 

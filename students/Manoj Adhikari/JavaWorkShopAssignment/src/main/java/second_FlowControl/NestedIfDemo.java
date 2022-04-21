@@ -1,8 +1,8 @@
-package Assignment2FlowControl;
+package second_FlowControl;
 
 import java.util.Scanner;
 
-public class IfStatementDemo {
+public class NestedIfDemo {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the number: ");
@@ -10,6 +10,10 @@ public class IfStatementDemo {
 
         if (num <= 100) {
             System.out.println("The number is less than 100");
+            if (num > 50) {
+                System.out.println("The number is greater than 50");
+
+            }
         }
 
     }

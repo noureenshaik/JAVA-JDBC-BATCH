@@ -1,4 +1,4 @@
-package assignment1Funamental;
+package first_Funamental;
 
 public class OperationAll {
     public static void main(String[] args) {

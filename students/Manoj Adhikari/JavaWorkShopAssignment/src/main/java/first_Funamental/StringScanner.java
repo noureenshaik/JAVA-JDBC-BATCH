@@ -1,4 +1,4 @@
-package assignment1Funamental;
+package first_Funamental;
 
 import java.util.Scanner;
 
