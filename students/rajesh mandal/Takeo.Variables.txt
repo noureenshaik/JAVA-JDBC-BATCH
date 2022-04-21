@@ -1,0 +1,510 @@
+1.package LocalVariables;
+
+public class Student {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		// local variables
+		// just declaring is not enough, we need to initialize the variables
+		int sno = 100;
+		String sname = "Rajesh";
+		double sfee = 250.25;
+		boolean flag = true;
+		System.out.println(sno + "\t" + sname + "\t" + sfee + "\t" + flag);
+// To format ,CTRL+ A and CTRL+SHIFT+F
+	}
+
+}
+
+2.package LocalVariables;
+
+public class SwapDemo {
+
+	public static void main(String[] args) {
+		int fno = 100;
+		int sno = 200;
+		int temp = 0;
+		System.out.println("Before swapping: ");
+		System.out.println("Fno: " + fno + " Sno: " + sno);
+		// swapping
+		temp = fno;
+		fno = sno;
+		sno = temp;
+
+		System.out.println("After swapping: ");
+		System.out.println("Fno: " + fno + " Sno: " + sno);
+
+	}
+
+}
+
+3.package LocalVariables;
+
+public class SwapDemo1 {
+	public static void main(String[] args) {
+		int fno = 100;
+		int sno = 200;
+		System.out.println("Before swapping: ");
+		System.out.println("Fno: " + fno + " Sno: " + sno);
+		fno =fno+sno; // 100+200=300
+		sno =fno-sno;//300-200=100
+		fno =fno-sno;//300-100=200
+
+		System.out.println("After swapping: ");
+		System.out.println("Fno: " + fno + " Sno: " + sno);
+
+	}
+
+}
+
+4.package LocalVariables;
+
+public class SwapDemo2 {
+
+	public static void main(String[] args) {
+		int fno = 100;
+		int sno = 200;
+		int tno=300;
+		System.out.println("Before swapping: ");
+		System.out.println("Fno: " + fno + " Sno: " +"\t"+ sno+"tno"+tno);
+		// swapping
+		int temp =0;
+		temp=fno;
+		fno=sno;
+		sno=tno;
+		tno=temp;
+		System.out.println("After swapping: ");
+		System.out.println("Fno: " + fno + " Sno: " +"\t"+ sno+"tno"+tno);
+		
+	}
+
+}
+5.package LocalVariables;
+
+public class SwapDemo3 {
+	public static void main(String[] args) {
+		int fno = 100;
+		int sno = 200;
+		int tno =300;
+		System.out.println("Before swapping: ");
+		System.out.println("Fno: " + fno + " Sno: " + sno+"\t"+ sno+"tno"+tno);
+		//swapping
+		fno =fno+sno+tno; // 100+200+300=600
+		sno =fno-sno-tno;//600-200-300=100
+		fno =fno-sno-tno;//600-100-200=300
+
+		System.out.println("After swapping: ");
+		System.out.println("Fno: " + fno + " Sno: " + sno+"\t"+ sno+"tno"+tno);
+
+	}
+
+}
+
+
+6.package nonstaticvariables;
+import java.util.Scanner;
+
+public class ScannerDemo {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter student number: ");
+		int sno= sc.nextInt();
+		System.out.println("Enter student Name:");
+		String sname= sc.next();
+		System.out.println("Enter student fee");
+		double sfee = sc.nextDouble();
+		System.out.println(sno+"\t"+sname+"\t"+sfee);
+
+	}
+
+}
+
+7.package nonstaticvariables;
+
+public class Student {
+	int sno;
+	String sname;
+	double sfee;
+
+	public static void main(String[] args) {
+
+		// System.out.println(sno + "\t" + sname + "\t" + sfee);
+		Student stu = new Student();
+
+		System.out.println(stu.sno + "\t" + stu.sname + "\t" + stu.sfee);
+		stu.sno = 100;
+		stu.sname = "rajesh";
+		stu.sfee = 56.6;
+		System.out.println(stu.sno + "\t" + stu.sname + "\t" + stu.sfee);
+
+	}
+
+}
+
+8.package nonstaticvariables;
+
+public class Employee {
+	int eno = 200;
+	String ename;
+
+	public static void main(String[] args) {
+		Employee emp = new Employee();
+		Employee emp1 = new Employee();
+		emp.ename = "raja";
+		System.out.println(emp.eno + "\t" + emp.ename);
+		System.out.println(emp1.eno + "\t" + emp1.ename);
+
+		System.out.println(emp);// nonstaticvariables.Employee@2c7b84de
+		System.out.println(emp1); // nonstaticvariables.Employee@3fee733d
+
+	}
+
+}
+
+9.package nonstaticvariables;
+
+public class Account {
+	int accNo =1000;
+
+	public static void main(String[] args) {
+		
+Account acc = null;
+System.out.println(acc.accNo); // java.lang.NullPointerException: 
+	}
+}
+package nonstaticvariables;
+
+public class SwapDemo {
+	int fno;
+	int sno;
+	int temp = 0;
+
+	void swap() {
+		fno = 100;
+		sno = 200;
+		System.out.println(" Before swapping: ");
+		System.out.println("fno: " + fno + " sno: " + sno);
+		// swapping
+		temp = fno;
+		fno = sno;
+		sno = temp;
+		System.out.println(" After swapping: ");
+		System.out.println("fno: " + fno + " sno: " + sno);
+
+	}
+
+	public static void main(String[] args) {
+		SwapDemo demo = new SwapDemo();
+		demo.swap();
+		
+		System.out.println(demo.fno+"\t"+demo.sno);
+
+	}
+
+
+
+10.package nonstaticvariables;
+
+public class Demo1 {
+// non static variables we can access directly.
+	int x = 0;
+	Demo1 d = null;
+
+	void functionD() {
+		d = new Demo1();
+		d.x = 10;
+		System.out.println(x); // 400
+		System.out.println(d.x);// 10
+	}
+
+	public static void main(String[] args) {
+
+		Demo1 d = new Demo1();
+		d.x = 400;
+		d.functionD();
+		System.out.println(d.d.x);// 10
+		System.out.println(d.x); // 400
+
+	}
+
+}
+11.package StaticVariables;
+
+//use of Static keyword with out creating an Object
+
+class Sdemo1 {
+	int i;
+	static int j;
+
+	public static void main(String[] args) {
+		Sdemo1 s = new Sdemo1();
+		System.out.println(s.i); // 0
+		System.out.println(j);// 0
+		j = 25;
+		System.out.println(j);// 25
+		Sdemo1 s1 = new Sdemo1();
+		s1.i = 20;
+		System.out.println(s1.i);// 20
+		System.out.println(s1.j);// 25
+
+	}
+}
+
+12.package StaticVariables;
+
+class Sdemo2 {
+	int i;
+	static int j;
+
+	static void function1() {
+		System.out.println(" j value is = " + j);// 0 ,1,2
+		j = j + 1;
+		System.out.println(" j value is = " + j);// 1,2,3
+		Sdemo2 s1 = new Sdemo2();
+		s1.i = 30;
+		System.out.println(s1.i);// 30 ,30,30
+	}
+
+	public static void main(String[] args) {
+		function1();
+		function1();
+		function1();
+		Sdemo2 s1 = new Sdemo2();
+		System.out.println(s1.i);// 0
+		s1.i = 150;
+		System.out.println(s1.i);// 150
+		System.out.println(s1.j);// 3
+
+	}
+}
+
+13.package StaticVariables;
+
+/*
+All the static variables would be common to all the reference of different objects of the same class
+
+Cannot declare Two variables like static int j and int j simultaneously bcz,
+we cannot declare two variables with same within the same class.
+*/
+class Sdemo3 {
+	int i;
+	static int j;
+
+	public static void main(String[] args) {
+		Sdemo3 s = null;
+//     System.out.println(s.i);//NullPointerException
+		System.out.println(s.j);// 0
+		Sdemo3 s1 = new Sdemo3();
+		System.out.println(s1);// StaticVariables.Sdemo3@2c7b84de
+		s1.i = 25;
+		s1.j = 35;
+		System.out.println(j); // 35
+		Sdemo3 s2 = new Sdemo3();
+		Sdemo3 s3 = new Sdemo3();
+		s2.i = 10;
+		System.out.println(s3.i);// 0
+		System.out.println(s3.j); // 35
+
+	}
+}
+
+14.package StaticVariables;
+
+class Sdemo4
+
+{
+	int i;
+	static int j;
+
+	public static void main(String[] args) {
+		Sdemo4 s = null;
+		// s.i = 25;
+		// System.out.println(s.i);
+		s.j = 35;
+		System.out.println(s.j);// 35
+		System.out.println(j);// 35
+		Sdemo4 s1 = new Sdemo4();
+		s1.i = 10;
+		Sdemo4 s2 = new Sdemo4();
+		System.out.println(s2.i);// 0
+		s2.j = 203;
+		System.out.println("s2 = " + s2.j);// 203
+		System.out.println("s2 = " + s1.j);// 203
+
+	}
+}
+
+15.package StaticVariables;
+
+/*
+Static variable and functions are available to non-Static functions directly,
+but non-variable and non-static function can not use directly in to the static function.
+
+*/
+class Sdemo5 {
+	int x;
+	static int y;
+
+	void functionA() {
+		int y = 0;
+		System.out.println("inside non static method functionA()");
+		x = 10;
+		y = 30;
+		System.out.println(x);//10
+		System.out.println(y);//30
+		functionZ();
+		System.out.println(x);//
+		System.out.println(y);//
+	}
+
+	static void functionZ() { // System.out.println(x); //non static variable cannot be referenced from a
+								// static context
+		System.out.println("inside non static method functionZ()");
+		System.out.println(y);//
+	}
+
+	public static void main(String[] args) {
+		Sdemo5 s = new Sdemo5();
+		s.functionA();
+	}
+
+}
+
+16.package StaticVariables;
+
+//access to the static elements of Sdemo3.java
+class Sdemo3 {
+	int i;
+	static int j;
+}
+
+class Sdemo6 {
+	static int x;
+
+	public static void main(String[] args) {
+		x = x + 1;
+		Sdemo3.j = 5;
+		System.out.println(Sdemo3.j);// 5
+		Sdemo3 s1 = new Sdemo3();
+		System.out.println(s1.j);// 5
+		s1.i = 203;
+		System.out.println(s1.i);// 203
+	}
+}
+
+17.package StaticVariables;
+
+/*
+If we create the context of a class from a non-static function , when control
+comes out of the function , the function gets deleted from the memory space,
+but the context of the class will available enter main() execution.
+*/
+class Sdemo7 {
+	void function1() {
+		Sdemo3.j = 115;
+		Sdemo3 s = new Sdemo3();
+		s.i = 50;
+		System.out.println("Inside function1()" + s.i);// 50
+		System.out.println("Inside function1()" + s.j);// 115
+	}
+
+	public static void main(String[] args) {
+		Sdemo7 s1 = new Sdemo7();
+		s1.function1();
+		System.out.println(Sdemo3.j);// 115
+		Sdemo3 s = new Sdemo3();
+
+		System.out.println("Inside function1()" + s.i);// 0 0
+
+		System.out.println("Inside function1()" + s.j);// 115
+	}
+}
+
+18.package StaticVariables;
+
+class Sdemo8
+
+{
+	void function1() {
+		System.out.println("Inside function1()");
+		Sdemo3.j = 115;
+		System.out.println("Inside function1()");
+
+	}
+
+	public static void main(String[] args) {
+		Sdemo8 s1 = new Sdemo8();
+		Sdemo3.j = 10;
+		System.out.println(Sdemo3.j);
+
+		s1.function1();
+		System.out.println(Sdemo3.j);
+		Sdemo3 d = new Sdemo3();
+		d.j = 5;
+		System.out.println(d.j);
+		System.out.println(Sdemo3.j);
+
+		s1.function1();
+
+	}
+}
+
+
+19.package StaticVariables;
+
+//related to Sdemo10
+class Sdemo9 
+{
+ static int i =10;
+	
+		static Sdemo5 a1 = new Sdemo5();
+	
+}
+
+package StaticVariables;
+
+//related to Sdemo10
+/*class Sdemo9 {
+	static int i = 10;
+	// prinstream out=new printStream();
+	static Sdemo5 a1 = new Sdemo5();
+
+}*/
+
+class Sdemo10 {
+	static Sdemo10 a;
+	int x;
+	static int j;
+
+	public static void main(String[] args) { // we can declare like this
+												// Sdemo10 a = null;
+		System.out.println(a);
+		// but no possibility like this
+		/*
+		 * static Sdemo10 a = null; System.out.println(a); //illegal start of expression
+		 */
+		/*
+		 * static Sdemo10 a = new Sdemo10(); System.out.println(a); //illegal start of
+		 * expression
+		 */
+		/*
+		 * static int y =10; System.out.println(y);//illegal start of expression
+		 */
+		a = new Sdemo10();
+		System.out.println(a);
+		a.x = 25;
+		System.out.println(a.x);
+		a.j = 35;
+		System.out.println(a.j);
+		System.out.println(Sdemo10.j);
+
+		Sdemo9.i = 10;
+		Sdemo9.a1.functionA();
+		System.out.println("Hello World!");
+	}
+}
+
+// multiline comment ctrl+shift+/ (forward slash)
+// mulitline uncomment ctrl +shift+\(back slash)
