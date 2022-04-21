@@ -1,0 +1,59 @@
+//1
+public class JavaExercise1 {
+	 public static void main(String[] args) {
+		  System.out.println("Hello\nShawn!");
+		 }
+		 
+		}
+
+//2
+import java.util.Scanner;
+
+public class JavaExercise2{
+		  public static void main(String[] args) 
+		  {
+		    Scanner input = new Scanner (System.in);
+		    System.out.print("Input the first number: ");
+		    int num1 = input.nextInt();
+		    System.out.print("Input the second number: ");
+		    int num2 = input.nextInt();
+		    int sum = num1 + num2;
+		    System.out.println();
+		    System.out.println("Sum: "+sum);
+		  }
+		}
+
+
+//3
+import java.util.Scanner;
+
+public class JavaExercise3 {
+  public static void main(String[] args) 
+  {
+    Scanner input = new Scanner (System.in);
+    System.out.print("Input your first name: ");
+    String fname = input.next();
+    System.out.print("Input your last name: ");
+    String lname = input.next();
+    System.out.println();
+    System.out.println("Hello \n"+fname+" "+lname);
+  }
+}
+
+
+//4
+import java.util.Scanner;
+
+public class JavaExercise4 {
+  public static void main(String[] args) 
+  {
+    Scanner input = new Scanner (System.in);
+    System.out.print("Input the first number: ");
+    int a = input.nextInt();
+    System.out.print("Input the second number: ");
+    int b = input.nextInt();
+    int d = (a/b);
+    System.out.println();
+    System.out.println("The division of a and b is:" +d);
+  }
+}
