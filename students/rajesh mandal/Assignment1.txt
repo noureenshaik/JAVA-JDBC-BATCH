@@ -1,0 +1,77 @@
+1.
+public class Main {
+// Mr. Sampath went to dominos, order of 2 pizz, each pizza cost is 399.,
+// Dominos provides 20% discount on bill Amount . Then calculate his finall bill amoount. 
+	public static void main(String[] args) {
+	int x = 2; // number of pizza
+	double y = 399.0; // pizza each cost 
+	double z;
+	z = x*y;
+	System.out.println("Total cost for pizza: "+z);
+	double discount;
+	discount = z-(z*.2); // calculating amount after 20% 
+	System.out.println("Final Bill amout after discout is : "+discount);
+	}
+
+}
+
+
+2.
+public class Main {
+
+	public static void main(String[] args) {
+	int salary; // initializing
+	salary = 85000; // assigning the value
+	int tax; // initializing 
+	tax = (int) ((salary*.2)); // calculating tax
+	System.out.println("Total tax is : "+tax); // printing tax
+	int amoutAfterTax; // initializing 
+	amoutAfterTax = salary-tax; // calculating salary after tax
+	System.out.println(" Salary after tax is :"+amoutAfterTax); // printing 
+	
+	}
+
+}
+3.
+public class Main {
+
+	public static void main(String[] args) {
+	int principal ;
+	principal= 500000;
+	int time = 5;
+	float rate = 5.8f;
+	int interest;
+	interest = (int) ((principal*time*rate)/100);
+	
+	System.out.println("Total interest is: "+interest);
+	int finalAmout;
+	finalAmout = principal-interest;
+	System.out.println("Final amount is : "+finalAmout);
+	
+	}
+
+}
+4.
+public class Main {
+
+	public static void main(String[] args) {
+	int basicSalary = 85000;
+	float taa = .15f;
+	float da = .2f;
+	float hra = .18f;
+	float pf = .2f;
+	float tax = .25f;
+	taa = basicSalary*taa;
+	da = basicSalary*da;
+	hra = basicSalary*hra;
+	
+	float grossAmount = basicSalary+taa+da+hra;
+	System.out.println("Total gross amount is :"+grossAmount);
+	pf = grossAmount *pf;
+	tax =grossAmount*tax;
+	double netAmount = grossAmount-(pf+tax);
+	System.out.println("Total net amount is : "+netAmount);
+	
+	}
+
+}
