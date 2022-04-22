@@ -1,0 +1,12 @@
+package Practice;
+
+public class DisplayTextFiveTimes {
+	public static void main() {
+		int n=5;
+		//for loop
+		for(int i=1;i<=n;++i) {
+			System.out.printIn("Java is fun");
+		}
+	}
+
+}
