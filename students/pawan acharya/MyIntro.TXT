@@ -1,1 +1,9 @@
-Hi This is just my quick introduction. I am a CS student. I like coding. Thanks
+Hi
+If you are here for checking who I am {
+	break;
+}
+else{
+	close the window();
+}
+
+This is just my quick introduction. I am a CS student. I like coding. Thanks
