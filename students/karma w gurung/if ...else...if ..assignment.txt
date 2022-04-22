@@ -1,0 +1,76 @@
+ans 1)
+
+import java.util.Scanner;
+
+public class assignment {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int a,b,c;
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the first number:");
+		a= sc.nextInt();
+		System.out.println("Enter the second number:");
+		b= sc.nextInt();
+		System.out.println("Enter the third number:");
+		c= sc.nextInt();
+		if(a>b && a>c) {
+			System.out.println("the largest number is:"+ a);
+			}
+		else if(b>a && b>c) {
+			System.out.println("the largest number is:"+ b);
+		}
+		else {
+			System.out.println("the largest number is:"+ c);
+		
+		}
+      }
+	}
+
+
+
+ans 2)
+
+import java.util.Scanner;
+public class evenodd {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+Scanner sc = new Scanner(System.in);
+System.out.println("Enter number:");
+ int number= sc.nextInt();
+
+if(number % 2 == 0)
+	System.out.println("the number is Even");
+else
+	System.out.println("the number is Odd");
+
+	}
+
+}
+
+
+
+ans 3)
+
+import java.util.Scanner;
+
+public class positiveNegative {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter number:");
+		 int number= sc.nextInt();
+
+		if(number>0)
+			System.out.println("the number is positive");
+		else
+			System.out.println("the number is negative");
+
+			}
+	}
+
+
