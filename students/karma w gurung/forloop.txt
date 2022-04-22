@@ -1,0 +1,174 @@
+1)
+public class main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	    int n = 5;
+	    // for loop  
+	    for (int i = 1; i <= n; ++i) {
+	      System.out.println("Java is fun");
+	    }
+
+	}
+
+}
+
+
+2)
+public class main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	    int sum = 0;
+	    int n = 1000;
+
+	    // for loop
+	    for (int i = 1; i <= n; ++i) {
+	      // body inside for loop
+	      sum += i;     // sum = sum + i
+	    }
+	       
+	    System.out.println("Sum = " + sum);
+
+	}
+
+}
+
+
+3)
+public class main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	    int[] numbers = {3, 7, 5, -5};
+	    
+	     for (int number: numbers) {
+	       System.out.println(number);
+	    }
+	}
+	
+}
+
+4)
+public class main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	    
+	       // for loop
+        for (int i = 1; i <= 10; ++i) {
+
+            // if the value of i is 5 the loop terminates  
+            if (i == 5) {
+                break;
+            }      
+            System.out.println(i);
+        }   
+    }
+}
+
+5)
+import java.util.Scanner;
+
+public class main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	    
+        Double number, sum = 0.0;
+
+        // create an object of Scanner
+        Scanner input = new Scanner(System.in);
+      
+        while (true) {
+            System.out.print("Enter a number: ");
+
+            // takes double input from user
+            number = input.nextDouble();
+         
+            // if number is negative the loop terminates
+            if (number < 0.0) {
+                break;
+            }
+         
+           sum += number;
+        }
+        System.out.println("Sum = " + sum);
+    }
+}
+
+
+6)
+
+public class main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	    
+        first:
+        for( int i = 1; i < 5; i++) {
+
+           
+            second:
+            for(int j = 1; j < 3; j ++ ) {
+                System.out.println("i = " + i + "; j = " +j);
+             
+               
+                if ( i == 2)
+                    break first;
+            }
+        }
+    }
+}
+
+
+7)
+
+public class main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	    
+		for (int i = 1; i <= 10; ++i) {
+
+		      if (i > 4 && i < 9) {
+		        continue;
+		      }
+		      System.out.println(i);
+		    }
+		  }
+		}
+
+
+8)
+public class main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	    
+		  int i = 1, j = 1;
+
+		    // outer loop
+		    while (i <= 3) {
+
+		      System.out.println("Outer Loop: " + i);
+
+		      // inner loop
+		      while(j <= 3) {
+
+		        if(j == 2) {
+		          j++;
+		          continue;
+		        }
+
+		        System.out.println("Inner Loop: " + j);
+		        j++;
+		      }
+		      i++;
+		    }
+		  }
+		}
+
+
+
