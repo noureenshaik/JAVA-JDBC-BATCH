@@ -1,0 +1,78 @@
+package Apps;
+
+import java.util.Scanner;
+
+public class CalculateApp {
+
+	int fno;
+	int sno;
+	Scanner sc = new Scanner(System.in);
+
+	void add() {
+
+		System.out.println("Enter the First Number ");
+		fno = sc.nextInt();
+		System.out.println("Enter the Second Number ");
+		sno = sc.nextInt();
+		int result = fno + sno;
+		System.out.println("Adding of Two Numbers : " + result);
+	}
+
+	void sub() {
+
+		System.out.println("Enter the First Number ");
+		fno = sc.nextInt();
+		System.out.println("Enter the Second Number ");
+		sno = sc.nextInt();
+		int result = fno - sno;
+		System.out.println("Subtraction of Two Numbers : " + result);
+	}
+
+	void mul() {
+
+		System.out.println("Enter the First Number ");
+		fno = sc.nextInt();
+		System.out.println("Enter the Second Number ");
+		sno = sc.nextInt();
+		int result = fno * sno;
+		System.out.println("Multiplication of Two Numbers : " + result);
+	}
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		CalculateApp calImpl = new CalculateApp();
+		while (true) {
+
+			System.out.println("*****************************************************");
+
+			System.out.println("                       1)ADD                         ");
+			System.out.println("                       2)SUB                         ");
+			System.out.println("                       3)MUL                         ");
+			System.out.println("                       4)EXIT                        ");
+
+			System.out.println("*****************************************************");
+
+			System.out.println("Enter the Choice :");
+			int choice = sc.nextInt();
+			switch (choice) {
+			case 1:
+				calImpl.add();
+				break;
+			case 2:
+				calImpl.sub();
+				break;
+			case 3:
+				calImpl.mul();
+				break;
+			case 4:
+				System.out.println("Thx for Using App!");
+				System.exit(0);
+			default:
+				System.out.println("Choose 1 to 4 Between");
+			}
+
+		} // end of while loop
+	}
+
+}

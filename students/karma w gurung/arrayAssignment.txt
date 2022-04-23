@@ -1,0 +1,72 @@
+1)
+import java.util.Arrays;
+
+public class main {
+	public static void main(String[] args) {
+
+		int[] my_array1 = { 112, 224, 335, 446, 558, 660, 776, 884, 993, };
+
+		String[] my_array2 = { "karma", "shyam", "Pbabe", "Celina", "prajwal", "nitika" };
+		
+		System.out.println("Original numeric array : " + Arrays.toString(my_array1));
+		Arrays.sort(my_array1);
+		System.out.println("Sorted numeric array : " + Arrays.toString(my_array1));
+
+		System.out.println("Original string array : " + Arrays.toString(my_array2));
+		Arrays.sort(my_array2);
+		System.out.println("Sorted string array : " + Arrays.toString(my_array2));
+	}
+}
+
+
+2)
+public class main {
+	
+	public static void main(String[] args) {
+		int my_array[] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+		int sum = 0;
+
+		for (int i : my_array)
+			sum += i;
+		System.out.println("The sum is " + sum);
+	}
+}
+
+
+
+3)
+
+public class main {
+	public static void main(String[] args) {
+
+		int[] numbers = new int[] { 20, 30, 25, 35, -16, 60, -100 };
+		
+		int sum = 0;
+		for (int i = 0; i < numbers.length; i++)
+			sum = sum + numbers[i];
+		
+		double average = sum / numbers.length;
+		System.out.println("Average value of the array elements is : " + average);
+	}
+}
+
+
+
+4)
+public class main {
+  public static boolean contains(int[] arr, int item) {
+      for (int n : arr) {
+         if (item == n) {
+            return true;
+         }
+      }
+      return false;
+   }
+   public static void main(String[] args) {
+          int[] my_array1 = {1992, 2035, 1899, 3456, 2022, 
+            1845, 2458, 1254, 1472, 2365, 
+            2001, 2265, 1457, 2456};
+      System.out.println(contains(my_array1, 2022));
+      System.out.println(contains(my_array1, 2023));
+   }
+}
