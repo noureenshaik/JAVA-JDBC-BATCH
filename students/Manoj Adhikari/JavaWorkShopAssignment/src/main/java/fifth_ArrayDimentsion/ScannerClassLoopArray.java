@@ -14,7 +14,7 @@ public class ScannerClassLoopArray {
         // values in each test cases as
         // an array values
         int totalTestCases, eachTestCaseValues;
-
+        System.out.println("Enter length of array row : ");
         // takes total nunber of
         // test cases as integer number
         totalTestCases = sc.nextInt();
@@ -28,8 +28,10 @@ public class ScannerClassLoopArray {
 
 
         for (int i=0 ; i<arrayMain.length;i++){
+            System.out.println("Enter the values are in  : "+ (i+1)+ "array");
             eachTestCaseValues=sc.nextInt();
             arrayMain[i]= new int [eachTestCaseValues];
+            System.out.println("Enter the  "+ (i+1)+ "array values");
             for(int j=0;j<arrayMain[i].length;j++){
                 arrayMain[i][j]=sc.nextInt();
             }
@@ -42,7 +44,6 @@ public class ScannerClassLoopArray {
             int nEvenNumber = 0, nOddNumbers=0;
             // print test case number with
             // total number of its arguments
-
             System.out.print( "Test case " +i + "with "+ arrayMain[i].length + " values ");
 
             for (int j=0; j<arrayMain[i].length;j++) {
