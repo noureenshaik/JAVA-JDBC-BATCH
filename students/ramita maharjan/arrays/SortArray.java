@@ -10,18 +10,15 @@ public class SortArray {
 		// input array elements
 		for(int i = 0; i < len; i++) arr[i] = in.nextInt();
 		numSort(arr);
-		System.out.println("Sorted numeric array:");
-		for(int i = 0; i < len; i++) System.out.print(arr[i]+ " ");
-		System.out.println("\n");
+		System.out.println("Sorted numeric array:" + Arrays.toString(arr));
+
 		
 		String[] strArr = {"sort", "an", "string", "array", "arr", "in"};
-		System.out.println("String array:");
-		for(int i = 0; i < strArr.length; i++) System.out.print(strArr[i]+ " ");
-		System.out.println("");
+		System.out.println("String array:" + Arrays.toString(strArr));
+
 		strSort(strArr);
-		System.out.println("Sorted string array:");
-		for(int i = 0; i < strArr.length; i++) System.out.print(strArr[i]+ " ");
-		System.out.println("");
+		System.out.println("Sorted string array:"+ Arrays.toString(strArr));
+
 	}
 	
 	public static void numSort(int[] arr) {
