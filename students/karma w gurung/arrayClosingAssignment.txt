@@ -1,0 +1,155 @@
+1)
+public class main {
+	public static int findIndex(int[]my_array, int t) {
+		if(my_array == null)return -1;
+		int len= my_array.length;
+		int i=0;
+		while (i<len) {
+			if(my_array[i]== t) return i;
+			else i=i+1;
+		}
+		return -1;
+	}
+	public static void main(String[]args) {
+		int[]my_array = {25,45,67,89,94,28};
+		System.out.println("index position of 25:"+ findIndex(my_array, 25));
+		System.out.println("index position of 94:"+ findIndex(my_array, 94));
+		
+	}
+			
+	}
+
+
+2)
+import java.util.Arrays;
+
+public class main {
+	
+	public static void main(String[]args) {
+		int[]my_array = {25,45,67,89,94,28};
+		System.out.println("original array:"+ Arrays.toString(my_array));
+		
+		int removeIndex = 1;
+		
+		for(int i = removeIndex; i < my_array.length -1; i++) {
+			my_array[i]= my_array[i+1];
+		}
+			System.out.println("after removing the second element:"+ Arrays.toString(my_array));
+			
+		
+	}
+			
+	}
+
+3)
+import java.util.Arrays;
+
+public class main {
+	
+	public static void main(String[]args) {
+		int[]my_array = {25,45,67,89,94,28,11,23,34,56};
+		int []new_array = new int [10];
+		
+		System.out.println("source array:"+ Arrays.toString(my_array));
+		
+		for(int i = 0; i < my_array.length -1; i++) {
+			new_array[i]= my_array[i+1];
+		}
+			System.out.println("new array:"+ Arrays.toString(my_array));
+			
+		
+	}
+			
+	}
+
+4)
+import java.util.Arrays;
+
+public class main {
+	
+	public static void main(String[]args) {
+		int[]my_array = {25,45,67,89,94,28,11,23,34,56};
+		int Index_position = 2;
+		int newValue = 5;
+		
+		System.out.println("originaal array:"+ Arrays.toString(my_array));
+		
+		for(int i= my_array.length -1;i > Index_position; i--) {
+			my_array[i]= my_array[i-1];
+		}
+		my_array[Index_position]= newValue;
+			System.out.println("new array:"+ Arrays.toString(my_array));
+			
+		
+	}
+			
+	}
+
+5)
+import java.util.Arrays;
+
+public class main {
+	
+	static int max;
+	static int min;
+	
+	
+	public static void max_min(int my_array[]) {
+		
+		max = my_array[0];
+		min = my_array[0];
+		
+		int len = my_array.length;
+		
+		for(int i = 1; i< len -1; i = i+2) {
+			if (i + 1 > len) {
+				if (my_array[i]> max)max = my_array[i];
+				if (my_array[i]< min)min = my_array[i];
+			}
+			
+				if (my_array[i] > my_array[i+1]) {
+					if (my_array[i]> max)max = my_array[i];
+					if (my_array[i+1]< min)min = my_array[i+1];
+				}
+				if (my_array[i] < my_array[i+1]) {
+					if (my_array[i]< min)min = my_array[i];
+					if (my_array[i+1]> max)max = my_array[i+1];
+				
+		}
+	   }
+	}
+	
+	public static void main(String[]args) {
+		int [] my_array = {23, 45, 56, 78, 89, 43, 21};
+		max_min(my_array);
+		
+		System.out.println("original array:"+ Arrays.toString(my_array));
+		
+		System.out.println("maximum value for the above array = "+ max);
+		System.out.println("minimum value for the above array = "+ min);
+	}
+}
+
+
+6)
+import java.util.Arrays;
+
+public class main {
+	
+public static void main(String[]args) {
+		int [] my_array1 = {23, 45, 56, 78, 89, 43, 21};
+		
+		System.out.println("original array:"+ Arrays.toString(my_array1));
+		
+		for(int i = 0; i < my_array1.length / 2; i++) {
+			
+			int temp = my_array1[i];
+			my_array1[i]= my_array1[my_array1.length -i -1];
+			my_array1[my_array1.length -i -1]= temp;
+		}
+		System.out.println("reverse array:"+ Arrays.toString(my_array1));
+		
+	}
+}
+	
+	

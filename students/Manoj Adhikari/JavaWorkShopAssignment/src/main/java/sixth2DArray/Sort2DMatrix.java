@@ -37,6 +37,6 @@ public class Sort2DMatrix {
                 {3, 4, 5, 6}};
         sortRowWise(m);
 
-        
+
     }
 }
