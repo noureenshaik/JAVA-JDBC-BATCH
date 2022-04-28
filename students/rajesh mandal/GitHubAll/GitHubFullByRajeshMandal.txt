@@ -1,0 +1,193 @@
+              ################ git ############################
+
+1. git version --
+   to check the version
+2. git config --global user.name "rajesh Mandal"
+   git config --global user.name
+3. git config --global user.email "rmandal.cs@gmail.com"
+   git config --global user.email
+4. git config --global --edit
+   to change name and email in vim editor
+   make changes and press : ESC,:,wq for window quit
+5. mkdir LetsLearnGit           -> to make directory
+   cd LetsLearnGit              -> change director
+   git init                     -> git initialize
+   ls                           ->list, nothing apears
+   ls -a                        -> .git files appears
+
+ Then create file sum.java file in visual studio code 
+6. git status                 -> to check what files exit
+   
+   untracked file sum.java appears in red color
+
+7. git add sum.java   -> to make it tracked file to commit
+    
+  now the files in staging area and it apears in green color
+
+   git status
+8. staging areas is hold area where we want to commit
+   git commit -m " initial commit"   -> write down the message
+9. to check how many commits we have
+  git log   -> when we commit then each has unique hashcodes
+
+10. when we make some changes in files and save it and then
+   git status
+   it shows that in red color "modified"
+11. make one more file in visual studio code
+    diff.java
+to clear everything 
+ cmd+k or clear
+
+12. git status
+    
+    git add diff.java
+    git status
+    git commit -m " intial commit"
+    git commit -m " adding diff.java"
+    git log
+    git add .    -> add all untracked file or midified file 
+    git commit -m  " added message to sum.java"
+
+
+13. git checkout <commit hash code/branch name>
+    
+    then it deletes the diff.java and comes to initial commit
+   To reverse it
+   git checkout master
+
+
+14. git branch
+    git log
+    git checkout master
+    git log
+
+15. To make more branches with master
+
+    git branch <branch name>
+    git branch dev
+    git branch
+    Then we have now dev and master branch
+    git checkout dev
+
+    To make another branch 
+    git checkout -b rajesh/multiply   -> put name to identify
+    the same   convention
+
+   its under the dev branch. If i make any change, nobody finds whats going on
+
+    make multiply.java file and write some codes.
+    git add multiply.java
+    git commit -m " added multiply.java"
+
+    git checkout dev  -> delete multiply.java
+
+15. When you think you are ready to pursue your code to any branches
+    git merge <branch name>
+    git merge rajesh/multiply  -> merge to dev
+    git log
+    git checkout master
+    git log 
+    git merge dev -> merge to master 
+    git log
+16. if you want that git doesnt track your files then we need to put into ingore
+    make a file -> secretkey.txt
+    git touch .gitignore or directly we can make into editor .gitignore
+    whatever we write in here, git ignores in .gitignore file
+    git status
+    we will see .gitignore and secretkey.txt in red color
+
+   if we write secretkey.txt in .gitignore file.
+   git status    -> it is removed 
+   if we write .gitignore then it will be also removed
+   git status
+
+                  ######### github ################
+1.  push an existing repository from the command line
+    git remote -v -> nothing appears
+    git remote add origin(nameanything) url link
+    then we will two links for fetch and push 
+ 
+2. To push 
+   git branch -m master
+   git push -u origin master
+   then it will ask for username and password
+
+   when we modify something and add the file and commit the files 
+ 
+  git push  ----> dont need to type anything , it will push automatically.
+
+                     
+3. To push dev branch 
+   git checkout dev
+   git push -u origin dev
+
+   now we have pushed master and dev branch too. 
+4. To add collabrator  to use open source or work in together 
+    setting ->manage access-> invite collabrator and type name
+    he has to accept the request ( they have same access)
+5. To make open source contributor
+
+   make new repository 
+  To cant make anychanges or clone then we have to fork
+   we can make one copy in your github
+
+6. git clone <repo url> 
+    then check their files 
+   git ls
+   git config --global --edit
+   vim <file name>  vim readMe.md
+   type i to insert mode to add something 
+   cat filename  ->  cat readMe.md
+   git status
+   git add readMe.md
+   git commit -m " readme addeded"
+   git push 
+
+ 7.  To request 
+    Go to the contribut and make -> open pull request ->create pull request
+    review and approve it 
+
+    merge pull request 
+    merge
+
+
+     Install fish shell: http://fishshell.com/
+
+
+   
+   
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
