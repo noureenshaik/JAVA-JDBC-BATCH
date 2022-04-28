@@ -1,0 +1,123 @@
+1)
+public class Main {
+  public static void main(String[] args) {
+    
+    
+    String first = "Java";
+    String second = "Python";
+    String third = "JavaScript";
+
+    System.out.println(first);   
+    System.out.println(second);  
+    System.out.println(third);   
+  }
+}
+
+2)
+public class Main {
+  public static void main(String[] args) {
+
+    String greet = "Hello! World";
+    System.out.println("String: " + greet);
+
+    int length = greet.length();
+    System.out.println("Length: " + length);
+  }
+}
+
+
+3)
+public class Main {
+  public static void main(String[] args) {
+
+    String first = "Java ";
+    System.out.println("First String: " + first);
+
+    String second = "Programming";
+    System.out.println("Second String: " + second);
+
+    String joinedString = first.concat(second);
+    System.out.println("Joined String: " + joinedString);
+  }
+}
+
+
+4)
+ public class Main {
+  public static void main(String[] args) {
+
+    String first = "java programming";
+    String second = "java programming";
+    String third = "python programming";
+
+    boolean result1 = first.equals(second);
+    System.out.println("Strings first and second are equal: " + result1);
+
+    boolean result2 = first.equals(third);
+    System.out.println("Strings first and third are equal: " + result2);
+  }
+}
+
+
+5)
+public class main  
+{  
+public static void main(String ar[])  
+{  
+String s="Sachin";    
+System.out.println(s.toUpperCase());    
+System.out.println(s.toLowerCase());   
+System.out.println(s);    
+  }  
+}  
+
+
+
+6)
+public class main 
+     {  
+public static void main(String ar[])  
+{  
+String s="  Sachin  ";    
+System.out.println(s);      
+System.out.println(s.trim());   
+  }  
+}  
+
+
+
+7)
+public class main
+{  
+public static void main(String ar[])  
+{  
+     String s="Sachin";    
+ System.out.println(s.startsWith("Sa"));   
+ System.out.println(s.endsWith("n"));   
+  }  
+}  
+
+
+8)
+public class main  
+{  
+public static void main(String ar[])  
+{  
+String s="Sachin";    
+System.out.println(s.charAt(0));   
+System.out.println(s.charAt(3));    
+  }  
+}  
+
+
+
+9)
+public class main 
+{  
+public static void main(String ar[])  
+{  
+String s1="Java is a programming language. Java is a platform. Java is an Island.";      
+String replaceString=s1.replace("Java","Kava");    
+System.out.println(replaceString);    
+  }  
+}
