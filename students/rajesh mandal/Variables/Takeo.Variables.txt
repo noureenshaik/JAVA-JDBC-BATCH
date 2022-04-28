@@ -1,4 +1,4 @@
-1.package LocalVariables;
+.1.package LocalVariables;
 
 public class Student {
 
