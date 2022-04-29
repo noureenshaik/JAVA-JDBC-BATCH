@@ -1,6 +1,5 @@
 package PracticeStudent;
 import java.util.Scanner;
-import PracticeStudent.Product;
 public class ProductDaoImpl {
 	Scanner sc = new Scanner(System.in);
 

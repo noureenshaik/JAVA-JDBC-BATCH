@@ -1,8 +1,6 @@
 package PracticeStudent;
 import java.util.Scanner;
 
-import PracticeStudent.ProductDetails;
-
 public class ProductClient {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
