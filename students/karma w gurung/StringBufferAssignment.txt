@@ -1,0 +1,127 @@
+1)
+public class StringBuffer{  
+public static void main(String args[]){  
+StringBuffer sb=new StringBuffer("Hello ");  
+sb.append("Java");
+System.out.println(sb);
+}  
+
+
+2)
+public class StringBuffer{  
+public static void main(String args[]){  
+StringBuffer sb=new StringBuffer("Hello ");  
+sb.insert(1,"Java");  
+System.out.println(sb); 
+ }  
+}  
+
+
+
+3)
+public class StringBuffer{  
+public static void main(String args[]){  
+StringBuffer sb=new StringBuffer("Hello");  
+sb.replace(1,3,"Java");  
+System.out.println(sb); 
+ }  
+}  
+
+
+
+4)
+public class StringBuffer{  
+public static void main(String args[]){  
+StringBuffer sb=new StringBuffer("Hello");  
+sb.delete(1,3);  
+System.out.println(sb); 
+ }  
+}  
+
+
+
+5)
+public class StringBuffer{  
+public static void main(String args[]){  
+StringBuffer sb=new StringBuffer("Hello");  
+sb.reverse();  
+System.out.println(sb); 
+ }  
+}  
+
+
+
+6)
+public class StringBuffer{  
+public static void main(String args[]){  
+StringBuffer sb=new StringBuffer();  
+System.out.println(sb.capacity()); 
+sb.append("Hello");  
+System.out.println(sb.capacity()); 
+sb.append("java is my favourite language");  
+System.out.println(sb.capacity());
+}  
+}  
+
+
+
+7)
+public class StringBuffer{  
+public static void main(String args[]){  
+StringBuffer sb=new StringBuffer();  
+System.out.println(sb.capacity()); 
+sb.append("Hello");  
+System.out.println(sb.capacity());  
+sb.append("java is my favourite language");  
+System.out.println(sb.capacity());
+sb.ensureCapacity(10);//now no change  
+System.out.println(sb.capacity()); 
+sb.ensureCapacity(50);//now (34*2)+2  
+System.out.println(sb.capacity()); 
+ }  
+}  
+
+
+
+8)
+ public class GFG {
+    public static void main(String[] args)
+    {
+  
+        
+        StringBuilder str = new StringBuilder();
+  
+        str.append("Geek");
+        char ch = str.charAt(1);
+  
+        System.out.println("StringBuilder Object"
+                           + " contains = " + str);
+        System.out.println("Character at Position 1"
+                           + " in StringBuilder = " + ch);
+    }
+}
+
+
+
+9) 
+ public class GFG {
+    public static void main(String[] args)
+    {
+        
+        StringBuilder
+            str
+            = new StringBuilder("WelcomeGeeks");
+  
+      System.out.println("String is "
+                           + str.toString());
+  
+        for (int i = 0; i < str.length(); i++) {
+  
+
+            char ch = str.charAt(i);
+  
+            System.out.println("Char at position "
+                               + i + " is " + ch);
+        }
+    }
+}
