@@ -1,60 +1,60 @@
 package PracticeStudent;
 import java.util.Scanner;
-import PracticeStudent.Student;
-public class StudentDaoImpl {
+import PracticeStudent.Product;
+public class ProductDaoImpl {
 	Scanner sc = new Scanner(System.in);
 
-	static Student student[] = null;
+	static Product product[] = null;
 
-	public void addStudents() {
+	public void addProducts() {
 
-		System.out.println("How Many Students Are Joining ?");
+		System.out.println("How many products are you adding ?");
 		int size = sc.nextInt();// 3
-		student = new Student[size];
+		product = new Product[size];
 
 		for (int i = 0; i < size; ++i) {
-			System.out.println("Enter Student Number ");
-			int sno = sc.nextInt();
-			System.out.println("Enter Student Name ");
-			String sname = sc.next();
-			System.out.println("Enter Student Address");
-			String sadd = sc.next();
+			System.out.println("Enter Product Id ");
+			int pid = sc.nextInt();
+			System.out.println("Enter Product Name ");
+			String pname = sc.next();
+			System.out.println("Enter Product Price");
+			int price = sc.nextInt();
 
-			Student stu = new Student(sno, sname, sadd);
-			student[i] = stu;
-			System.out.println("Student Record Added Success Fully");
+			Product stu = new Product(pid, pname, price);
+			product[i] = stu;
+			System.out.println("Product Added Success Fully");
 
 		} // end of for loop
 
-	}// end of addStudents();
+	}// end of addProducts();
 
-	public Student[] viewAllStudents() {
+	public Product[] viewAllProducts() {
 
-		return student;
-	}// end of viewAll Students
+		return product;
+	}// end of viewAll Products
 
-	public Student viewStudent(int sno) {
-		if (student != null) {
-			for (Student stu : student) {
+	public Product viewProduct(int pid) {
+		if (product!= null) {
+			for (Product stu : product) {
 
-				if (stu.getSno() == sno) {
+				if (stu.getPid() == pid) {
 					return stu;
 				}
 			}
 		}
 		return null;
-	}// end of viewStudent
+	}// end of viewProduct
 
-	public void delete(int sno) {
+	public void delete(int pid) {
 
 		int j = 0;
 		int k = 0;
-		if (student != null) {
-			for (Student stu : student) {
+		if (product != null) {
+			for (Product stu : product) {
 
-				if (stu.getSno() == sno) {
+				if (stu.getPid() == pid) {
 
-					student[k] = null;
+					product[k] = null;
 					System.out.println("Record is deleted SuccessFully");
 					++j;
 					break;
@@ -70,28 +70,28 @@ public class StudentDaoImpl {
 
 	}// end of delete Method
 
-	public void update(int sno) {
+	public void update(int pid) {
 
 		int j = 0;
-		if (student != null) {
-			for (Student stu : student) {
-				if (stu.getSno() == sno) {
+		if (product != null) {
+			for (Product stu : product) {
+				if (stu.getPid() == pid) {
 					++j;
-					System.out.println("Do You Want to update 1)Student Name 2)StudentAddress");
+					System.out.println("Do You Want to update 1)Product Name 2)ProductAddress");
 					System.out.println("Enter The Choice");
 					int choice = sc.nextInt();
 					switch (choice) {
 					case 1:
-						System.out.println("Enter Student Name");
+						System.out.println("Enter Product Name");
 						String name = sc.next();
-						stu.setSname(name);// updating a name
-						System.out.println("Student Name updated SuccessFully");
+						stu.setPname(name);// updating a name
+						System.out.println("Product Name updated SuccessFully");
 						break;
 					case 2:
-						System.out.println("Enter Student Address");
-						String sadd = sc.next();
-						stu.setSadd(sadd);
-						System.out.println("Student Address is updated SuccessFully");
+						System.out.println("Enter Product Price");
+						int price = sc.nextInt();
+						stu.setPrice(price);
+						System.out.println("Product Price is updated SuccessFully");
 						break;
 					default:
 						System.out.println("Choose 1 to 2 between ");
