@@ -1,12 +1,9 @@
 package PracticeStudent;
 import java.util.Scanner;
-import PracticeStudent.StudentClient;
-import PracticeStudent.StudentDaoImpl;
-import PracticeStudent.Student;
-public class StudentDetails {
+public class ProductDetails {
 	Scanner sc = new Scanner(System.in);
 
-	StudentDaoImpl daoImpl = new StudentDaoImpl();
+	ProductDaoImpl daoImpl = new ProductDaoImpl();
 
 	public void stuMenu()
 
@@ -14,11 +11,11 @@ public class StudentDetails {
 		while (true) {
 			System.out.println("*************************************************");
 
-			System.out.println("           1)AddStudent                          ");
-			System.out.println("           2)ViewAllStudent                          ");
-			System.out.println("           3)ViewStudent                          ");
-			System.out.println("           4)deleteStudent                          ");
-			System.out.println("           5)UpdateStudent                                         ");
+			System.out.println("           1)AddProduct                          ");
+			System.out.println("           2)ViewAllProduct                          ");
+			System.out.println("           3)ViewProduct                          ");
+			System.out.println("           4)deleteProduct                          ");
+			System.out.println("           5)UpdateProduct                                         ");
 			System.out.println("           6)Back                          ");
 
 			System.out.println("*************************************************");
@@ -27,47 +24,47 @@ public class StudentDetails {
 			int choice = sc.nextInt();
 			switch (choice) {
 			case 1:
-				daoImpl.addStudents();
+				daoImpl.addProducts();
 				break;
 			case 2:
-				Student[] viewAllStudents = daoImpl.viewAllStudents();
+				Product[] viewAllProducts = daoImpl.viewAllProducts();
 
 				System.out.println("*************************************************");
-				System.out.println("SNO \t SNAME \t SADD");
+				System.out.println("PID \t PNAME \t PRICE");
 				System.out.println("*************************************************");
-				if (viewAllStudents != null) {
-					for (Student stu : viewAllStudents) {
+				if (viewAllProducts != null) {
+					for (Product stu : viewAllProducts) {
 						if (stu != null)
-							System.out.println(stu.getSno() + "\t" + stu.getSname() + "\t" + stu.getSadd());
+							System.out.println(stu.getPid() + "\t" + stu.getPname() + "\t" + stu.getPrice());
 					}
 				} // end of if
 				else
 					System.out.println("Records Not found");
 				break;
 			case 3:
-				System.out.println("Enter Student Number");
-				Student stu = daoImpl.viewStudent(sc.nextInt());
+				System.out.println("Enter Product Id");
+				Product stu = daoImpl.viewProduct(sc.nextInt());
 				System.out.println("*************************************************");
-				System.out.println("SNO \t SNAME \t SADD");
+				System.out.println("PID \t PNAME \t PRICE");
 				System.out.println("*************************************************");
 
 				if (stu != null)
-					System.out.println(stu.getSno() + "\t" + stu.getSname() + "\t" + stu.getSadd());
+					System.out.println(stu.getPid() + "\t" + stu.getPname() + "\t" + stu.getPrice());
 				else
 					System.out.println("Given Record Not Found");
 				break;
 			case 4:
-				System.out.println("Enter Student Number");
+				System.out.println("Enter Product ID");
 				daoImpl.delete(sc.nextInt());
 				break;
 			case 5:
-				System.out.println("Enter Student Number");
+				System.out.println("Enter Product ID");
 daoImpl.update(sc.nextInt());
 break;
 				
 			case 6:
 				
-				StudentClient.main(null);
+				ProductClient.main(null);
 				break;
 
 			default:
