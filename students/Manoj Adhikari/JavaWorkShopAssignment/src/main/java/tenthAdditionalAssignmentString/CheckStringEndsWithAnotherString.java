@@ -3,8 +3,8 @@ package tenthAdditionalAssignmentString;
 public class CheckStringEndsWithAnotherString {
     public static void main(String[] args)
     {
-        String str1 = "Python Exercises";
-        String str2 = "Python Exercise";
+        String str1 = "Java Exercises";
+        String str2 = "Java Exercise";
 
         // The String to check the above two Strings to see
         // if they end with this value (se).
