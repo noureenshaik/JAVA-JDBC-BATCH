@@ -1,34 +1,34 @@
 package PracticeStudent;
 
-public class Student {
-	int sno;
-	String sname;
-	String sadd;
-	public int getSno() {
-		return sno;
+public class Product {
+	int pid;
+	String pname;
+	int price;
+	public int getPid() {
+		return pid;
 	}
-	public void setSno(int sno) {
-		this.sno = sno;
+	public void setPid(int pid) {
+		this.pid = pid;
 	}
-	public String getSname() {
-		return sname;
+	public String getPname() {
+		return pname;
 	}
-	public void setSname(String sname) {
-		this.sname = sname;
+	public void setPname(String pname) {
+		this.pname = pname;
 	}
-	public String getSadd() {
-		return sadd;
+	public int getPrice() {
+		return price;
 	}
-	public void setSadd(String sadd) {
-		this.sadd = sadd;
+	public void setPrice(int price) {
+		this.price = price;
 	}
-	public Student(int sno, String sname, String sadd) {
+	public Product(int pid, String pname, int price) {
 		super();
-		this.sno = sno;
-		this.sname = sname;
-		this.sadd = sadd;
+		this.pid = pid;
+		this.pname = pname;
+		this.price = price;
 	}
-	public Student() {
+	public Product() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
