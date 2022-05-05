@@ -1,0 +1,99 @@
+1)
+public class main {
+	public static void main(String[] args) {
+
+		String str1 = "Karma", str2 = "baby";
+		StringBuffer strbuf = new StringBuffer(str1);
+
+		System.out.println("Comparing " + str1 + " and " + strbuf + ": " + str1.contentEquals(strbuf));
+
+		System.out.println("Comparing " + str2 + " and " + strbuf + ": " + str2.contentEquals(strbuf));
+
+	}
+}
+
+
+2)
+public class main {
+	
+	public static void main(String[] args) {
+
+		char[] arr_num = new char[] { 'D', 'B', 'A', 'B','Y' };
+
+        
+        String str = String.copyValueOf(arr_num, 1, 4);
+
+        
+        System.out.println("i loVE U " + str);
+    }
+}
+	
+
+3)
+public class main {
+
+	public static void main(String[] args) {
+
+		String str1 = "karma";
+		String str2 = "karna";
+
+		String end_str = "ma";
+
+		boolean ends1 = str1.endsWith(end_str);
+		boolean ends2 = str2.endsWith(end_str);
+
+		System.out.println("\"" + str1 + "\" ends with " + "\"" + end_str + "\"? " + ends1);
+		System.out.println("\"" + str2 + "\" ends with " + "\"" + end_str + "\"? " + ends2);
+	}
+}
+
+
+4)
+public class main {
+
+	public static void main(String[] args) {
+
+		String str1 = "karma";
+		String str2 = "karma";
+        String str3 = "karma";
+       
+        boolean equals1 = str1.equals(str2);
+        boolean equals2 = str1.equals(str3);
+        
+
+        
+        System.out.println("\"" + str1 + "\" equals \"" +
+        		str2 + "\"? " + equals1);
+        System.out.println("\"" + str1 + "\" equals \"" +
+        		str3 + "\"? " + equals2);
+    }
+}
+
+
+5)
+import java.time.format.DateTimeFormatter;
+import java.time.LocalDateTime;
+
+public class main {
+	public static void main(String[] args) {
+		DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");
+		LocalDateTime now = LocalDateTime.now();
+		System.out.println(dtf.format(now));
+	}
+}
+
+
+6)
+public class main {
+	public static void main(String[] args) {
+
+		String str = "and soon will be working with the team.";
+
+		byte[] byte_arr = str.getBytes();
+
+		String new_str = new String(byte_arr);
+
+		System.out.println("\n karma is in takeo bootcamp " + new_str + "\n");
+	}
+}
+
