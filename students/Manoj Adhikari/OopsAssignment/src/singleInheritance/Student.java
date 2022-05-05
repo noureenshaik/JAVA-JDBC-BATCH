@@ -1,6 +1,6 @@
 package singleInheritance;
 
-public class Student extends Employee{
+public class Student extends Employee {
     String name = "Adhikari";
 
     public static void main(String[] args) {

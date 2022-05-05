@@ -1,6 +1,6 @@
 package MultipleInheritanceEx1;
 
-public class Child implements three{
+public class Child implements three {
     @Override
     public void print_for() {
         System.out.println("greek");
