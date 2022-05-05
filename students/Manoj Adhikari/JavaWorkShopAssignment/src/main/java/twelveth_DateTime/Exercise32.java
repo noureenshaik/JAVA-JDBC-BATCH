@@ -11,7 +11,7 @@ public class Exercise32 {
 
 		// date of birth
 
-		LocalDate pdate = LocalDate.of(1989, 04, 11);
+		LocalDate pdate = LocalDate.of(1986, 06, 19);
 		// current date
 		LocalDate now = LocalDate.now();
 		// difference between current date and date of birth
