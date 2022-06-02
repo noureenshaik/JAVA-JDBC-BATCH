@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<title>CSS Website Layout</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+box-sizing: border-box;
+
+
+}
+
+body {
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  background-color: pink;
+  padding: 30px;
+  text-align: center;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: skyblue;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: center;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color:lightsalmon;
+  color: black;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+}
+
+/* Left and right column */
+.column.side {
+  width: 25%;
+}
+
+/* Middle column */
+.column.middle {
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
+
+/* Style the footer */
+.footer {
+  background-color:red;
+  padding: 10px;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>COUNTRY</h1>
+ 
+</div>
+
+
+<div class="topnav">
+  <p><a href="https://en.wikipedia.org/wiki/Texas">Explore Texas</a></p>
+  <a href="https://en.wikipedia.org/wiki/New_York_City">Explore New York</a>
+  <a href="https://en.wikipedia.org/wiki/New_Mexico">Explore New Mexico</a>
+</div>
+
+<div class="row">
+  <div class="column side">
+    <h2>Texas</h2>
+    <p>Texas is a state in the South Central region of the United States. At 268,596 square miles, and with more than 29.1 million residents in 2020, it is the second-largest U.S. state by both area and</p>
+  </div>
+  
+  <div class="column middle">
+    <h2>New York</h2>
+    <p>New York City comprises 5 boroughs sitting where the Hudson River meets the Atlantic Ocean. At its core is Manhattan, a densely populated borough that’s among the world’s major commercial, financial and cultural centers. Its iconic sites include skyscrapers such as the Empire State Building and sprawling Central Park. Broadway theater is staged in neon-lit Times Square. ― Google</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+  </div>
+  
+  <div class="column side">
+    <h2>New Mexico</h2>
+    <p>New Mexico is a state in the Southwestern United States. It is one of the Mountain States of the southern Rocky Mountains, sharing the Four Corners region of the western U.S. with Utah, Colorado,</p>
+  </div>
+</div>
+
+
+
+<div class="footer">
+  <p>Thank You For Visiting</p>
+</div>
+  
+</body>
+</html>
