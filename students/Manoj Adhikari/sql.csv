@@ -1,0 +1,13 @@
+empid,firstname,lastname,empage,empaddress,empdepartment,empemailid
+1001,"Manoj ",Adhikari,30,Texas,Computer,ma@gmail.com
+1002,"Deepa ",Adhikari,25,Nepal,Economics,da@gmail.com
+1003,"Karma ",Gurung,40,Biratnagar,History,kg@gmail.com
+1004,"Kunal ",Singh,45,India,Zoology,ks@gmail.com
+1005,Rajiv,Agrawal,20,Lowa,Computer,ra@gmail.com
+1006,"Saroj ",Khatri,25,California,Zoology,sk@gmail.com
+1007,"Himanchu ",Shrestha,25,Nepal,Computer,hs@gmail.com
+1008,Nancy,Prajapati,24,California,History,npWgmail.com
+1009,"Pawan ",Acharya,30,Lowa,Nepali,pa@gmail.com
+1010,Pawan,Basnet,34,India,History,pb@gmail.com
+1011,Tenzing,Dhorje,35,Texas,Economics,td@gmail.com
+1012,Shawn,Gurung,32,California,Nepali,sg@gmail.com
