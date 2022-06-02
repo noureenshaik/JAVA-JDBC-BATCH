@@ -1,5 +1,5 @@
 import java.util.ArrayList;
-import java.util.Collections;
+import java.util.Iterator;
 import java.util.List;
 import java.util.ListIterator;
 
@@ -30,7 +30,14 @@ public class ArrayExample {
         list.forEach(a->{
             System.out.println(a);
         });
-        
+
+        System.out.println("Transvesing list via forEachRemaining ()");
+
+        Iterator<String>itr=list.iterator();
+
+
+
+
 
 
     }

@@ -1,18 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="SCOPE_TYPE" value="3" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="76f7c2c4-6a6f-4270-97c2-8c5e2006bcb0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/ArrayExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ArrayListExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ArrayListExample2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ArraySetExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ArraySortingExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Stack/Stackdemo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CollectionArray/ArrayExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CollectionArray/ArrayListExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CollectionArray/ArrayListExample2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CollectionArray/ArraySetExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CollectionArray/ArraySortingExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../~$raylist.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../~$terview question.docx" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -36,24 +45,24 @@
     <option name="showVisibilityIcons" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ArrayExample">
+  <component name="RunManager" selected="Application.Stackdemo">
     <configuration name="ArrayExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ArrayExample" />
-      <module name="CollectionArray" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ArrayListExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ArrayListExample" />
       <module name="CollectionArray" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -80,13 +89,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Stackdemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Stack.Stackdemo" />
+      <module name="CollectionArray" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Stack.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Stackdemo" />
         <item itemvalue="Application.ArrayExample" />
         <item itemvalue="Application.ArraySortingExample" />
         <item itemvalue="Application.ArraySetExample" />
         <item itemvalue="Application.ArrayListExample2" />
-        <item itemvalue="Application.ArrayListExample" />
       </list>
     </recent_temporary>
   </component>
