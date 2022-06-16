@@ -5,3 +5,9 @@ Today's task is to create Git folder.
 Create file in the folder. 
 
 Push it to git hub. 
+
+hello 
+
+hi
+
+how are you?
