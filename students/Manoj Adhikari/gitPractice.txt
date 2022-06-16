@@ -1,1 +1,6 @@
 Git 
+
+Git push
+git push
+git pull
+git commit
