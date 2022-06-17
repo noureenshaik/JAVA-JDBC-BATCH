@@ -1,6 +1,70 @@
 Git 
 
-Git push
-git push
-git pull
-git commit
+A. create one document
+then
+0. git status
+1. git add .
+2. git commit -m "push it"
+3. git push
+
+
+
+//changed some local file
+B. Change file then save it
+
+
+
+//to check local changes
+3. git diff
+
+
+
+//to remove/delete local changes
+4. git checkout .
+
+
+
+//git add . then remove from here(stagged -->unstagged)
+git add .
+git reset filename
+
+
+
+
+//check for all commits
+git log
+
+
+
+
+// adding files in to reop
+
+
+
+git add -A ( can add mutilple files at a times)
+
+
+
+git add -u ( will add all new modified and deleted files)
+
+
+
+
+//to switch branchss
+git checkout main
+git checkout branchnam
+
+
+
+
+//.gitignore
+
+
+
+notepad.gitignore or touch .gitignore
+/target e
+
+
+
+
+// do not want on repo
