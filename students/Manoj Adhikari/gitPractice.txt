@@ -48,6 +48,7 @@ delete permannent
 git rm g.txt
 
 git add -A
+//checked modified file
 git status -s 
 
 //undo
@@ -57,4 +58,4 @@ git restore --stage
 
 git -a -m "message"
 
-
+s
